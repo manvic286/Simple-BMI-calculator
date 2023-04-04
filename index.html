@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form autocomplete="off">
+        <div class="age">
+            Age <br>
+            <input type="number" name="" id="age" autofocus>
+        </div>
+
+        <div class="inputHW">
+            <div class="inputH">
+                Weight(in kg) <br>
+                <input type="number" id="weight">
+            </div>
+            <div class="inputW">
+                Height(in cm) <br>
+                <input type="number" id="height">
+            </div>
+        </div>
+
+        <input type="button" value="Calculate" id="calc" onclick="calculate()">
+        <input type="reset">
+
+        <div class="showbmi">
+            <h2>Your BMI is</h2>
+            <p id="show">00.00</p>
+            <p>Status: <span  id="result"></span></p>
+        </div>
+
+        <p id="info">The body mass index (BMI) calculator estimates the amount of body fat a person has in relation to age, height, and weight.</p>
+
+        <span class="foot">By Emmanuel Viotor</span>
+
+        
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
